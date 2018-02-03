@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Project Description</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @import url("https://fonts.googleapis.com/css?family=Poppins:300,600");
+
+            body {
+              font-family: 'Poppins', Helvetica, sans-serif;
+            }
+            
+            img {
+                width: 400px;
+                height: 650px;
+            }
+            
+            .pictures {
+                padding: 7.5vh 0;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>App Name: TimeLord</h1>
+        <hr>
+        <div>
+            <h2>Purpose:</h2>
+            <p>Help people remember things that they need to accomplish and help them with time management skills</p>
+        </div>
+        <div>
+            <h2>Need:</h2>
+            <p>Naturally humans are not retentive creatures and therefore have trouble remembering everyday tasks and keeping on track with their schedule</p>
+        </div>
+        <div>
+            <h2>Solution:</h2>
+            <p>Create a mobile itinerary for users to write down what things they need to complete. Track these tasks and fire events when tasks is scheduled. Keep track if user checks in or not and as actually committing to task to provide accurate stats on how they are doing. Build auto-time allocation feature that corrected schedule to make sure user does not fall behind on their goal.</p>
+        </div>
+        <div>
+            <h2>Obstacles Encountered:</h2>
+            <p>Creating a mobile itinerary was the easiest implementation to achieve. Everything else relied heavily on a lot of logic and phone notification events which I was not ready to handle. For example, I wanted the itinerary to be sorted based on the time and dates scheduled, but I for the life of me could not come up with an effective compare function in order to sort the list of to-dos. In addition, having no knowledge on how to implement phone notification events my solutions such as the CheckIn, Event statistics, and Auto-Time allocation features would be difficult because I wouldn't know how to interact and manipulate the data for each task. Not only this, but even the simplest task was a bit challenging because even though I could display all the data that users were entering, all of it would disappear as soon as the closed.</p>
+        </div>
+        <div>
+            <h2>Solutions for Obstacles:</h2>
+            <p>I honestly tried to research and find methods on how to implement all these extra features for time management, but I felt it was best to go simple and at least achieve a mobile itinerary that would save all the content you entered. So in order, to do so, I created a function using HTML5 localStorage in order to dynamically create an array in JavaScript and push whatever values that were inputted to that array. Then I simply created a show function to display it all in a list. Each task that was added to the list had the date it was scheduled for and Remove button incase the user had finished.</p>
+        </div>
+        <div>
+            <h2>Conclusions:</h2>
+            <p>Overall, I really liked this assignment and even though I wasn't able to accomplish everything I stated in my prototype I still had fun and came close making what I originally designed. This is definitely not the final version of this app; and I do intend to get better so I can implement these additional features.</p>
+        </div>
+        <div>
+            <h2>Test Drive:</h2>
+            <p>Here's a demo of the app running taken with screenshots</p>
+            <div class='pictures'>
+            <figure>
+            <img src='test6.png' alt='Stage1'>
+            <figcaption><em>Here's is homepage of the app when you run it</em></figcaption>
+            </figure>
+            <p>When the application loads, automatically it finds the date for the day and preselects it. After pressing add and selecting the date of your, task that information will be added between the the total horizontal lines.</p>
+            <figure>
+                <img src='test1.png' alt='Stage2'>
+                <figcaption><em>Here I added somethings I wanted to complete for today and tomorrow and even took a picture on my phone to remind myself and share with all my friends so they can remind me.</em></figcaption>
+            </figure>
+            <figure>
+                <img src='test2.png' alt='Stage3'>
+                <figcaption><em>There's our plug-in working!</em></figcaption>
+            </figure>
+            <figure>
+                <img src='test5.png' alt='Stage4'>
+                <figcaption><em>By hitting the 'X' button, we can update our list and then add other tasks. </em></figcaption>
+            </figure>
+            </div>
+        </div>
+    </body>
+</html>
